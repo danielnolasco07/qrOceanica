@@ -1,0 +1,234 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/*Css de la pantalla de generar QR*/
+/* *{
+    margin: 0;
+    padding: 0;
+  } */
+  
+  /*.page{
+    height: 100vh;
+    background-color: #512da8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }*/
+  /* .container{
+    height: 300px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    
+  } */
+  .heading{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 1rem;
+    font-weight: bold;
+  
+  }
+  .img-holder{
+    /* margin: auto;
+    width: 150px;
+    height: 150px;
+    border: 3px black solid;
+    border-radius: 5px;
+    margin-top: 1rem; */
+    display: flex;
+    justify-content: center;
+   
+  } 
+  .img{
+   /* width: 150px;
+    height: 178px;
+    object-fit: cover;  */
+    object-fit: cover;
+    max-width: 100%;
+    object-position: center;
+    
+  }
+  #input[type="file"] {
+      display: none;
+  }
+  /* .label{
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  } */
+  .image-upload{
+    margin: auto;
+    width: 200px;
+      height: 50px;
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+  }
+  #tituloboton{
+    font-size: 12.5px;
+    font-family: inherit;
+    margin-left: 52px;
+    margin-top: 4px;
+  }
+  #descripImagen{
+
+    font-size: 11.5px;
+    /*font-family: cursive;*/
+    text-transform: uppercase;
+  }
+
+  #tiutloDestalleImag{
+    font-size: 12.5px;
+    font-family: cursive;
+  }
+
+#BotonSubirImag:hover{
+  background-color:#24837b !important;
+
+}
+#botonpreview:hover{
+  background-color:#24837b !important;
+}
+#Regresar:hover{
+  background-color:#24837b !important;
+}
+#GenerarPDF:hover{
+  background-color:#24837b !important;
+}
+
+#TextField1{
+  font-size: 15px;
+}
+#TextField2{
+  font-size: 15px;
+}
+
+
+#textarea1{
+  font-size: 14px;
+  text-align: justify;
+}
+
+#textarea2{
+  font-size: 14px;
+  text-align: justify;
+}
+#textarea3{
+  font-size: 14px;
+  text-align: justify;
+}
+.MuiSwitch-colorSecondary.Mui-checked {
+  color:    #3aa79e  !important;
+}
+.MuiSwitch-colorSecondary.Mui-checked + .MuiSwitch-track {
+
+  background-color: #3aa79e !important;
+}
+
+/*#tituloQRBorder{
+
+  border: 1px #5edad0 solid;
+  border-radius: 20px;
+  padding: 5px;
+  background-color: #5edad0;
+  color: white;
+}*/
+
+/*Imprimir*/
+
+@media print {
+ 
+  @page { margin: 0;
+    size: auto;
+   }
+  #botonesQR{
+    visibility: hidden;
+  }
+  #Appbar
+  {
+    visibility: hidden;
+  }
+  #contenedorCard { 
+  
+  min-width: 450px;
+  text-align: center;
+  height: 450px;
+  }
+
+}
+
+
+@media(max-width:500px){
+
+  #paperPrincipal{
+
+    width: 360px !important ;
+  }
+   
+
+  .MuiInputBase-root{
+    width: 250px !important;
+
+  }
+
+  #containerimgOcea{
+    margin-right: 39px;
+  }
+
+  #imgOcea{
+
+    width: 84px;
+  }
+  #imgAlo24{
+    width: 76px;
+  }
+  
+  /* #containerimgOcea{
+    margin-left: 45px;
+  }
+  #imgOcea{
+    width: 98px;
+  } */
+
+}
